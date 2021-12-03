@@ -9,7 +9,7 @@ pip install pyautogui
 ## Import packages
 
 import selenium
-PATH = "/Users/julia/Nextcloud/Thèse/2020-2021/J2P/Captures/chromedriver"
+PATH = "my_path/chromedriver"
 
 from selenium import webdriver
 import pyautogui
@@ -22,7 +22,7 @@ import os
 ## Create directories 
 
 
-PARIS = "/Users/julia/Nextcloud/Thèse/2020-2021/J2P/Captures/Préfecture de Paris"
+PARIS = "my_path/Captures/Préfecture de Paris"
 
 DIR_ETU = os.path.join(PARIS, "Demande de premier titre de séjour « étudiant » réservée aux étudiants non munis d’un VLS-TS")
 DIR_TRAV_TRU = os.path.join(PARIS, "Demande d'admission exceptionnelle au séjour au regard du travail (CRE Truffaut))")
@@ -66,7 +66,7 @@ for L in liens:
     # Capture d'écran
     myScreenshot = pyautogui.screenshot()
     # Enregistrement
-    path = f'/Users/julia/Nextcloud/Thèse/2020-2021/J2P/Captures/Préfecture de Paris/{L}'
+    path = f'my_path/Captures/Préfecture de Paris/{L}'
     filename = f'{date}.png'
     filename = os.path.join(path, filename)
     myScreenshot.save(filename)
