@@ -19,27 +19,13 @@ from datetime import datetime
 import time
 import os
 
-## Create directories 
-
-
-PARIS = "my_path/Captures/Préfecture de Paris"
-
-DIR_ETU = os.path.join(PARIS, "Demande de premier titre de séjour « étudiant » réservée aux étudiants non munis d’un VLS-TS")
-DIR_TRAV_TRU = os.path.join(PARIS, "Demande d'admission exceptionnelle au séjour au regard du travail (CRE Truffaut))")
-DIR_TRAV_CHA = os.path.join(PARIS, "Demande d'admission exceptionnelle au séjour au regard du travail (CRE Charcot))")
-DIR_VPF_TRU = os.path.join(PARIS, "Demande d’admission exceptionnelle au séjour au titre de la situation personnelle et familiale (CRE Truffaut))")
-DIR_VPF_CHA = os.path.join(PARIS, "Demande d’admission exceptionnelle au séjour au titre de la situation personnelle et familiale (CRE Charcot))")
-DIR_MEDI_CHA = os.path.join(PARIS, "Demande de titre de séjour pour raisons médicales (Charcot)")
-DIR_MEDI_TRU = os.path.join(PARIS, "Demande de titre de séjour pour raisons médicales (Truffaut)")
-
-
 # Préfecture de Paris
 
 driver = webdriver.Chrome(PATH)
 driver.get("https://pprdv.interieur.gouv.fr/Rendez-vous-demarches-prefecture-de-police")
 # print(driver.title)
 
-# Liste des liens
+## Liste des liens
 liens = ["Demande de premier titre de séjour « étudiant » réservée aux étudiants non munis d’un VLS-TS",
         "Demande de titre de séjour pour raisons médicales (Truffaut)",
         "Demande de titre de séjour pour raisons médicales (Charcot)",
@@ -49,7 +35,7 @@ liens = ["Demande de premier titre de séjour « étudiant » réservée aux ét
         "Demande d'admission exceptionnelle au séjour au regard du travail (Charcot)"]
 
 date = str(datetime.now())[0:10]
-# Scroll fin de la page
+## Scroll fin de la page
 for L in liens:
     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
     # Clic premier lien 
@@ -81,13 +67,11 @@ driver.get("https://www.seine-saint-denis.gouv.fr/Prendre-un-rendez-vous")
 # print(driver.title)
 
 
-# Liste des localisations du lien
+## Liste des localisations du lien
 lien = "Demande d'admission exceptionnelle au séjour"
 nbliens = driver.find_elements_by_link_text(lien)
 n = len(nbliens)
 
-
-# self.driver.execute_script("return arguments[0].scrollIntoView(true);", element)
 
 date = str(datetime.now())[0:10]
 
