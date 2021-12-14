@@ -20,8 +20,10 @@ En l’état actuel, le bot navigue sur le site de la préfecture de Paris, et c
 
 Les images au format .png sont automatiquement stockées dans un dossier correspondant au motif du titre de séjour correspondant. Le titre de chaque fichier indique la date à laquelle la capture d’écran a été prise. Pour l’admission exceptionnelle au titre du travail à la préfecture de Paris (CRE Charcot), le site propose 2 plages d’accès aux rendez-vous : « salarié » et « salarié 2 ». Le bot teste ces 2 plages et capture le résultat pour chacune d’entre elle. 
 
-## Continuations possibles
+## Continuations et améliorations possibles
 
 Cet outil pourrait être élargi à d’autres préfectures. Si cela n’a pas été fait dans un premier temps, c’est en raison des différentes interfaces et arborescences de chaque site, ce qui rend fastidieux la généralisation de la navigation du bot. Par ailleurs, tous les types de démarches ne peuvent pas être screenées par le bot, car depuis très récemment, les préfectures ont changé leur mode d’accès : les démarches doivent être menées via une plateforme nominative (« France Connect »), ce qui fait peser la charge des captures d’écran sur les individus, et entrave l’action des associations. 
 
-Enfin, si le bot travaille seul, il doit pour l’instant être lancé manuellement. Une continuation immédiate sera ainsi d’automatiser le lancement de Python, à des horaires aléatoires au cours de chaque journée, afin d’en faire une pure tâche de fond. 
+D'autre part, si le bot travaille seul, il doit pour l’instant être lancé manuellement. Une continuation immédiate sera ainsi d’automatiser le lancement de Python, à des horaires aléatoires au cours de chaque journée, afin d’en faire une pure tâche de fond. 
+
+Enfin, l'ensemble du processus est très lent (parfois plus de 20 minutes en semaine). Ce n'est pas dû à une lenteur du bot, mais du site des préfectures. Ces derniers mettent un temps infini à charger, voire crashent complètement ("Service surchargé"). Sur cet aspect, le bot n'a pas la main, donc il n'est pas possible d'y faire grand chose !
