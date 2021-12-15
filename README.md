@@ -10,7 +10,7 @@ La dématérialisation a 2 conséquences. D'une part, elle exclut les publics le
 
 ## Méthode
 
-L’association La Cimade a déjà produit les chiffres de ce blocage des rendez-vous via le site <a href="https://aguichetsfermes.lacimade.org">« À guichets fermés »</a> . L’outil proposé ici fonctionne de la même manière, mais projette de mettre à disposition non pas des chiffres mais les captures d’écran concrètes des sites des préfectures, afin de fournir de manière rapide et exhaustive de la matière aux mails de relance à la préfecture, ou encore aux dossiers de recours dans les tribunaux administratifs. 
+L’association La Cimade a déjà produit les chiffres de ce blocage des rendez-vous via le site <a href="https://aguichetsfermes.lacimade.org">« À guichets fermés »</a>. L’outil proposé ici fonctionne de la même manière, mais projette de mettre à disposition non pas des chiffres mais les captures d’écran concrètes des sites des préfectures, afin de fournir de manière rapide et exhaustive de la matière aux mails de relance à la préfecture, ou encore aux dossiers de recours dans les tribunaux administratifs. 
 
 De la même manière que le bot de La Cimade, cet outil se rend sur les sites des préfectures, et pour chaque type de titre de séjour ouvert à la prise de rendez-vous en ligne, simule une prise de rendez-vous. Une capture d’écran est prise au moment où s’affiche la page finale (en général celle qui annonce qu’aucun créneau de rendez-vous n’est disponible). 
 
@@ -20,8 +20,10 @@ En l’état actuel, le bot navigue sur le site de la préfecture de Paris, et c
 
 Les images au format .png sont automatiquement stockées dans un dossier correspondant au motif du titre de séjour correspondant. Le titre de chaque fichier indique la date à laquelle la capture d’écran a été prise. Pour l’admission exceptionnelle au titre du travail à la préfecture de Paris (CRE Charcot), le site propose 2 plages d’accès aux rendez-vous : « salarié » et « salarié 2 ». Le bot teste ces 2 plages et capture le résultat pour chacune d’entre elle. 
 
-## Continuations possibles
+## Continuations et améliorations possibles
 
 Cet outil pourrait être élargi à d’autres préfectures. Si cela n’a pas été fait dans un premier temps, c’est en raison des différentes interfaces et arborescences de chaque site, ce qui rend fastidieux la généralisation de la navigation du bot. Par ailleurs, tous les types de démarches ne peuvent pas être screenées par le bot, car depuis très récemment, les préfectures ont changé leur mode d’accès : les démarches doivent être menées via une plateforme nominative (« France Connect »), ce qui fait peser la charge des captures d’écran sur les individus, et entrave l’action des associations. 
 
-Enfin, si le bot travaille seul, il doit pour l’instant être lancé manuellement. Une continuation immédiate sera ainsi d’automatiser le lancement de Python, à des horaires aléatoires au cours de chaque journée, afin d’en faire une pure tâche de fond. 
+D'autre part, si le bot travaille seul, il doit pour l’instant être lancé manuellement. Une continuation immédiate sera ainsi d’automatiser le lancement de Python, à des horaires aléatoires au cours de chaque journée, afin d’en faire une pure tâche de fond. 
+
+Enfin, l'ensemble du processus est très lent (parfois plus de 20 minutes en semaine). Ce n'est pas dû à une lenteur du bot, mais du site des préfectures. Ces derniers mettent un temps infini à charger, voire crashent complètement ("Service surchargé"). Sur cet aspect, le bot n'a pas la main, donc il n'est pas possible d'y faire grand chose !
