@@ -10,7 +10,7 @@ La dématérialisation a 2 conséquences. D'une part, elle exclut les publics le
 
 ## Méthode
 
-L’association La Cimade a déjà produit les chiffres de ce blocage des rendez-vous via le site <a href="https://aguichetsfermes.lacimade.org">« À guichets fermés »</a> . L’outil proposé ici fonctionne de la même manière, mais projette de mettre à disposition non pas des chiffres mais les captures d’écran concrètes des sites des préfectures, afin de fournir de manière rapide et exhaustive de la matière aux mails de relance à la préfecture, ou encore aux dossiers de recours dans les tribunaux administratifs. 
+L’association La Cimade a déjà produit les chiffres de ce blocage des rendez-vous via le site <a href="https://aguichetsfermes.lacimade.org">« À guichets fermés »</a>. L’outil proposé ici fonctionne de la même manière, mais projette de mettre à disposition non pas des chiffres mais les captures d’écran concrètes des sites des préfectures, afin de fournir de manière rapide et exhaustive de la matière aux mails de relance à la préfecture, ou encore aux dossiers de recours dans les tribunaux administratifs. 
 
 De la même manière que le bot de La Cimade, cet outil se rend sur les sites des préfectures, et pour chaque type de titre de séjour ouvert à la prise de rendez-vous en ligne, simule une prise de rendez-vous. Une capture d’écran est prise au moment où s’affiche la page finale (en général celle qui annonce qu’aucun créneau de rendez-vous n’est disponible). 
 
