@@ -1,5 +1,8 @@
 # Screen ta préfecture
 
+## [ATTENTION] Le bot n'est pas à jour
+L’architecture des sites de préfectures changeant en permanence (qui est un degré de difficulté supplémentaire pour les immigré-es peu familier-es avec l’outil informatique), ce bot créé en 2021 n’est désormais plus à jour. De plus, les dépôts de demande de régularisation exceptionnelle se font désormais via l’envoi d’un mail à la préfecture, et non plus une prise de rendez-vous directe. 
+
 ## Contexte
 
 L’idée de cet outil est née de deux épisodes. Le premier est une recherche ethnographique dans le cadre d’un travail de thèse sur les trajectoires administratives des familles migrantes en France : les échanges avec les familles enquêtées et avec des bénévoles associatifs font ressortir avec acuité la lourdeur des démarches de régularisation dans le cadre d’une dématérialisation accrue des administrations migratoires. Le second épisode est une réunion publique du collectif « Bouge ta préfecture » en novembre 2021, qui a mis en évidence le blocage des rendez-vous en préfecture, en particulier pour « l’admission exceptionnelle au séjour » (qui est en réalité une des seules voies d’accès à la régularisation pour les personnes en situation irrégulière qui résident et travaillent, souvent en famille, depuis plusieurs années en France).
